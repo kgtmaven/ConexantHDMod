@@ -28,6 +28,8 @@ HdAudModelV64.CopyList =10,system32\drivers
 CoInstaller.CopyFiles=10,system32
 Uninstall.CopyList=16422,CONEXANT\%UIPATH%
 SfxFx.CopyList=11     ; %windir%\system32
+PCEE4.CopyFiles=11
+Dolby.CopyFiles=11
 SRSFx.CopyList=11,SRSLabs
 SfxFxW8.CopyList=11     ; %windir%\system32
 
@@ -64,6 +66,15 @@ slprp64.dll=222
 sltech64.dll=222
 sluapo64.dll=222
 slconfig.xml=222
+DDPO64A.dll=222
+DDPD64A.dll=222
+DDPP64A.dll=222
+DDPA64.dll=222
+EEL64A.dll=222
+EED64A.dll=222
+EEG64A.dll=222
+EEA64A.dll=222
+EEP64A.dll=222
 
 [Manufacturer]
 %CNXT%=Conexant, NTamd64.6.1, NTamd64.6.2, NTamd64.6.3, NTamd64.6.4
@@ -80,6 +91,15 @@ slcnt64.dll=SignatureAttributes.PETrust
 slprp64.dll=SignatureAttributes.PETrust
 sltech64.dll=SignatureAttributes.PETrust
 sluapo64.dll=SignatureAttributes.PETrust
+DDPO64A.dll=SignatureAttributes.PETrust
+DDPD64A.dll=SignatureAttributes.PETrust
+DDPP64A.dll=SignatureAttributes.PETrust
+DDPA64.dll=SignatureAttributes.PETrust
+EEL64A.dll=SignatureAttributes.PETrust
+EED64A.dll=SignatureAttributes.PETrust
+EEG64A.dll=SignatureAttributes.PETrust
+EEA64A.dll=SignatureAttributes.PETrust
+EEP64A.dll=SignatureAttributes.PETrust
 
 [SignatureAttributes.DRM]
 DRMLevel=1300
@@ -191,127 +211,127 @@ ExcludeFromSelect = *
 Include=ks.inf,wdmaudio.inf
 Needs=KS.Registration,WDMAUDIO.Registration
 DelReg=HdAud.DelReg, DriverInfo.DelReg
-CopyFiles = HdAudModelV64.Copylist, Uninstall.Copylist, SfxFx.CopyList, SRSFx.CopyList
-AddReg    = HdAudModel.AddReg, HdAud2075x.AddReg, DriverInfo.AddReg, Couninstaller.AddReg, SRS.AddReg
+CopyFiles = HdAudModelV64.Copylist, Uninstall.Copylist, SfxFx.CopyList, SRSFx.CopyList, Dolby.CopyFiles, PCEE4.CopyFiles
+AddReg    = HdAudModel.AddReg, HdAud2075x.AddReg, DriverInfo.AddReg, Couninstaller.AddReg, SRS.AddReg, PCEE4_DHT_Keys.AddReg,PCEE4GlobalKeys.AddReg, PCEE4APO.AddReg, DS1APO.AddReg, DS1.Defaults.APOKeys.AddReg, DS1.DHT_Defaults.ProfileKeys.AddReg, MSFXAPO.AddReg
 AddProperty = HdAudBranding.AddProperty
-RegisterDlls=SfxFx.RegisterDlls, SRS.RegisterDlls
+RegisterDlls=SfxFx.RegisterDlls, SRS.RegisterDlls, Dolby.RegisterDlls, PCEE4.RegisterDlls
 
 [HdAud2075x.15Z960.NTamd64]
 Include=ks.inf,wdmaudio.inf
 Needs=KS.Registration,WDMAUDIO.Registration
 DelReg=HdAud.DelReg, DriverInfo.DelReg
-CopyFiles = HdAudModelV64.Copylist, Uninstall.Copylist, SfxFx.CopyList, SRSFx.CopyList
-AddReg    = HdAudModel.AddReg, HdAud2075x.AddReg, DriverInfo.AddReg, Couninstaller.AddReg, SRS.AddReg, AECOn.AddReg
+CopyFiles = HdAudModelV64.Copylist, Uninstall.Copylist, SfxFx.CopyList, SRSFx.CopyList, Dolby.CopyFiles, PCEE4.CopyFiles
+AddReg    = HdAudModel.AddReg, HdAud2075x.AddReg, DriverInfo.AddReg, Couninstaller.AddReg, SRS.AddReg, AECOn.AddReg, PCEE4_DHT_Keys.AddReg,PCEE4GlobalKeys.AddReg, PCEE4APO.AddReg, DS1APO.AddReg, DS1.Defaults.APOKeys.AddReg, DS1.DHT_Defaults.ProfileKeys.AddReg, MSFXAPO.AddReg
 AddProperty = HdAudBranding.AddProperty
-RegisterDlls=SfxFx.RegisterDlls, SRS.RegisterDlls
+RegisterDlls=SfxFx.RegisterDlls, SRS.RegisterDlls, Dolby.RegisterDlls, PCEE4.RegisterDlls
 
 [HdAud2075x.15Z950.NTamd64]
 Include=ks.inf,wdmaudio.inf
 Needs=KS.Registration,WDMAUDIO.Registration
 DelReg=HdAud.DelReg, DriverInfo.DelReg
-CopyFiles = HdAudModelV64.Copylist, Uninstall.Copylist, SfxFx.CopyList, SRSFx.CopyList
-AddReg    = HdAudModel.AddReg, HdAud2075x.AddReg, DriverInfo.AddReg, Couninstaller.AddReg, SRS.AddReg, LvlRelAdjust.AddReg
+CopyFiles = HdAudModelV64.Copylist, Uninstall.Copylist, SfxFx.CopyList, SRSFx.CopyList, Dolby.CopyFiles, PCEE4.CopyFiles
+AddReg    = HdAudModel.AddReg, HdAud2075x.AddReg, DriverInfo.AddReg, Couninstaller.AddReg, SRS.AddReg, LvlRelAdjust.AddReg, PCEE4_DHT_Keys.AddReg,PCEE4GlobalKeys.AddReg, PCEE4APO.AddReg, DS1APO.AddReg, DS1.Defaults.APOKeys.AddReg, DS1.DHT_Defaults.ProfileKeys.AddReg, MSFXAPO.AddReg
 AddProperty = HdAudBranding.AddProperty
-RegisterDlls=SfxFx.RegisterDlls, SRS.RegisterDlls
+RegisterDlls=SfxFx.RegisterDlls, SRS.RegisterDlls, Dolby.RegisterDlls, PCEE4.RegisterDlls
 
 [HdAud2075x.13U360.NTamd64]
 Include=ks.inf,wdmaudio.inf
 Needs=KS.Registration,WDMAUDIO.Registration
 DelReg=HdAud.DelReg, DriverInfo.DelReg
-CopyFiles = HdAudModelV64.Copylist, Uninstall.Copylist, SfxFx.CopyList
-AddReg    = HdAudModel.AddReg, HdAud2075x_13U.AddReg, DriverInfo.AddReg, Couninstaller.AddReg, PortA.AddReg, MicGain.AddReg, NoMicNR.AddReg
+CopyFiles = HdAudModelV64.Copylist, Uninstall.Copylist, SfxFx.CopyList, Dolby.CopyFiles, PCEE4.CopyFiles
+AddReg    = HdAudModel.AddReg, HdAud2075x_13U.AddReg, DriverInfo.AddReg, Couninstaller.AddReg, PortA.AddReg, MicGain.AddReg, NoMicNR.AddReg, PCEE4_DHT_Keys.AddReg,PCEE4GlobalKeys.AddReg, PCEE4APO.AddReg, DS1APO.AddReg, DS1.Defaults.APOKeys.AddReg, DS1.DHT_Defaults.ProfileKeys.AddReg, MSFXAPO.AddReg
 AddProperty = HdAudBranding.AddProperty
-RegisterDlls=SfxFx.RegisterDlls
+RegisterDlls=SfxFx.RegisterDlls, Dolby.RegisterDlls, PCEE4.RegisterDlls
 
 [HdAud2075x.15P660.NTamd64]
 Include=ks.inf,wdmaudio.inf
 Needs=KS.Registration,WDMAUDIO.Registration
 DelReg=HdAud.DelReg, DriverInfo.DelReg
-CopyFiles = HdAudModelV64.Copylist, Uninstall.Copylist, SfxFx.CopyList, SRSFx.CopyList
-AddReg    = HdAudModel.AddReg, HdAud2075x.AddReg, DriverInfo.AddReg, Couninstaller.AddReg, SRS.AddReg, PortA.AddReg
+CopyFiles = HdAudModelV64.Copylist, Uninstall.Copylist, SfxFx.CopyList, SRSFx.CopyList, Dolby.CopyFiles, PCEE4.CopyFiles
+AddReg    = HdAudModel.AddReg, HdAud2075x.AddReg, DriverInfo.AddReg, Couninstaller.AddReg, SRS.AddReg, PortA.AddReg, PCEE4_DHT_Keys.AddReg,PCEE4GlobalKeys.AddReg, PCEE4APO.AddReg, DS1APO.AddReg, DS1.Defaults.APOKeys.AddReg, DS1.DHT_Defaults.ProfileKeys.AddReg, MSFXAPO.AddReg
 AddProperty = HdAudBranding.AddProperty
-RegisterDlls=SfxFx.RegisterDlls, SRS.RegisterDlls
+RegisterDlls=SfxFx.RegisterDlls, SRS.RegisterDlls, Dolby.RegisterDlls, PCEE4.RegisterDlls
 
 [HdAud2075x.15P560.NTamd64]
 Include=ks.inf,wdmaudio.inf
 Needs=KS.Registration,WDMAUDIO.Registration
 DelReg=HdAud.DelReg, DriverInfo.DelReg
-CopyFiles = HdAudModelV64.Copylist, Uninstall.Copylist, SfxFx.CopyList, SRSFx.CopyList
-AddReg    = HdAudModel.AddReg, HdAud2075x_15P.AddReg, DriverInfo.AddReg, Couninstaller.AddReg, SRS.AddReg, PortA.AddReg
+CopyFiles = HdAudModelV64.Copylist, Uninstall.Copylist, SfxFx.CopyList, SRSFx.CopyList, Dolby.CopyFiles, PCEE4.CopyFiles
+AddReg    = HdAudModel.AddReg, HdAud2075x_15P.AddReg, DriverInfo.AddReg, Couninstaller.AddReg, SRS.AddReg, PortA.AddReg, PCEE4_DHT_Keys.AddReg,PCEE4GlobalKeys.AddReg, PCEE4APO.AddReg, DS1APO.AddReg, DS1.Defaults.APOKeys.AddReg, DS1.DHT_Defaults.ProfileKeys.AddReg, MSFXAPO.AddReg
 AddProperty = HdAudBranding.AddProperty
-RegisterDlls=SfxFx.RegisterDlls, SRS.RegisterDlls
+RegisterDlls=SfxFx.RegisterDlls, SRS.RegisterDlls, Dolby.RegisterDlls, PCEE4.RegisterDlls
 
 [HdAud2075x3.14Z950.NTamd64]
 Include=ks.inf,wdmaudio.inf
 Needs=KS.Registration,WDMAUDIO.Registration
 DelReg=HdAud.DelReg, DriverInfo.DelReg
-CopyFiles = HdAudModel.Copylist, Uninstall.Copylist, SfxFxW8.CopyList, SRSFx.CopyList
-AddReg    = HdAudModel.AddReg, HdAud2075x.AddReg, DriverInfo.AddReg, Couninstaller.AddReg, SRS.AddReg
+CopyFiles = HdAudModel.Copylist, Uninstall.Copylist, SfxFxW8.CopyList, SRSFx.CopyList, Dolby.CopyFiles, PCEE4.CopyFiles
+AddReg    = HdAudModel.AddReg, HdAud2075x.AddReg, DriverInfo.AddReg, Couninstaller.AddReg, SRS.AddReg, PCEE4_DHT_Keys.AddReg,PCEE4GlobalKeys.AddReg, PCEE4APO.AddReg, DS1APO.AddReg, DS1.Defaults.APOKeys.AddReg, DS1.DHT_Defaults.ProfileKeys.AddReg, MSFXAPO.AddReg
 AddProperty = HdAudBranding.AddProperty
-RegisterDlls=SfxFxW8.RegisterDlls, SRS.RegisterDlls
+RegisterDlls=SfxFxW8.RegisterDlls, SRS.RegisterDlls, Dolby.RegisterDlls, PCEE4.RegisterDlls
 
 [HdAud2075x3.15Z960.NTamd64]
 Include=ks.inf,wdmaudio.inf
 Needs=KS.Registration,WDMAUDIO.Registration
 DelReg=HdAud.DelReg, DriverInfo.DelReg
-CopyFiles = HdAudModel.Copylist, Uninstall.Copylist, SfxFxW8.CopyList, SRSFx.CopyList
-AddReg    = HdAudModel.AddReg, HdAud2075x.AddReg, DriverInfo.AddReg, Couninstaller.AddReg, SRS.AddReg, AECOn.AddReg
+CopyFiles = HdAudModel.Copylist, Uninstall.Copylist, SfxFxW8.CopyList, SRSFx.CopyList, Dolby.CopyFiles, PCEE4.CopyFiles
+AddReg    = HdAudModel.AddReg, HdAud2075x.AddReg, DriverInfo.AddReg, Couninstaller.AddReg, SRS.AddReg, AECOn.AddReg, PCEE4_DHT_Keys.AddReg,PCEE4GlobalKeys.AddReg, PCEE4APO.AddReg, DS1APO.AddReg, DS1.Defaults.APOKeys.AddReg, DS1.DHT_Defaults.ProfileKeys.AddReg, MSFXAPO.AddReg
 AddProperty = HdAudBranding.AddProperty
-RegisterDlls=SfxFxW8.RegisterDlls, SRS.RegisterDlls
+RegisterDlls=SfxFxW8.RegisterDlls, SRS.RegisterDlls, Dolby.RegisterDlls, PCEE4.RegisterDlls
 
 [HdAud2075x3.15Z950.NTamd64]
 Include=ks.inf,wdmaudio.inf
 Needs=KS.Registration,WDMAUDIO.Registration
 DelReg=HdAud.DelReg, DriverInfo.DelReg
-CopyFiles = HdAudModel.Copylist, Uninstall.Copylist, SfxFxW8.CopyList, SRSFx.CopyList
-AddReg    = HdAudModel.AddReg, HdAud2075x.AddReg, DriverInfo.AddReg, Couninstaller.AddReg, SRS.AddReg, LvlRelAdjust.AddReg
+CopyFiles = HdAudModel.Copylist, Uninstall.Copylist, SfxFxW8.CopyList, SRSFx.CopyList, Dolby.CopyFiles, PCEE4.CopyFiles
+AddReg    = HdAudModel.AddReg, HdAud2075x.AddReg, DriverInfo.AddReg, Couninstaller.AddReg, SRS.AddReg, LvlRelAdjust.AddReg, PCEE4_DHT_Keys.AddReg,PCEE4GlobalKeys.AddReg, PCEE4APO.AddReg, DS1APO.AddReg, DS1.Defaults.APOKeys.AddReg, DS1.DHT_Defaults.ProfileKeys.AddReg, MSFXAPO.AddReg
 AddProperty = HdAudBranding.AddProperty
-RegisterDlls=SfxFxW8.RegisterDlls, SRS.RegisterDlls
+RegisterDlls=SfxFxW8.RegisterDlls, SRS.RegisterDlls, Dolby.RegisterDlls, PCEE4.RegisterDlls
 
 [HdAud2075x3.13U360.NTamd64]
 Include=ks.inf,wdmaudio.inf
 Needs=KS.Registration,WDMAUDIO.Registration
 DelReg=HdAud.DelReg, DriverInfo.DelReg
-CopyFiles = HdAudModel.Copylist, Uninstall.Copylist, SfxFxW8.CopyList
-AddReg    = HdAudModel.AddReg, HdAud2075x_13U.AddReg, DriverInfo.AddReg, Couninstaller.AddReg, PortA.AddReg, MicGain.AddReg, NoMicNR.AddReg
+CopyFiles = HdAudModel.Copylist, Uninstall.Copylist, SfxFxW8.CopyList, Dolby.CopyFiles, PCEE4.CopyFiles
+AddReg    = HdAudModel.AddReg, HdAud2075x_13U.AddReg, DriverInfo.AddReg, Couninstaller.AddReg, PortA.AddReg, MicGain.AddReg, NoMicNR.AddReg, PCEE4_DHT_Keys.AddReg,PCEE4GlobalKeys.AddReg, PCEE4APO.AddReg, DS1APO.AddReg, DS1.Defaults.APOKeys.AddReg, DS1.DHT_Defaults.ProfileKeys.AddReg, MSFXAPO.AddReg
 AddProperty = HdAudBranding.AddProperty
-RegisterDlls=SfxFxW8.RegisterDlls
+RegisterDlls=SfxFxW8.RegisterDlls, Dolby.RegisterDlls, PCEE4.RegisterDlls
 
 [HdAud2075x3.15P560.NTamd64]
 Include=ks.inf,wdmaudio.inf
 Needs=KS.Registration,WDMAUDIO.Registration
 DelReg=HdAud.DelReg, DriverInfo.DelReg
-CopyFiles = HdAudModel.Copylist, Uninstall.Copylist, SfxFxW8.CopyList, SRSFx.CopyList
-AddReg    = HdAudModel.AddReg, HdAud2075x_15P.AddReg, DriverInfo.AddReg, Couninstaller.AddReg, SRS.AddReg, PortA.AddReg
+CopyFiles = HdAudModel.Copylist, Uninstall.Copylist, SfxFxW8.CopyList, SRSFx.CopyList, Dolby.CopyFiles, PCEE4.CopyFiles
+AddReg    = HdAudModel.AddReg, HdAud2075x_15P.AddReg, DriverInfo.AddReg, Couninstaller.AddReg, SRS.AddReg, PortA.AddReg, PCEE4_DHT_Keys.AddReg,PCEE4GlobalKeys.AddReg, PCEE4APO.AddReg, DS1APO.AddReg, DS1.Defaults.APOKeys.AddReg, DS1.DHT_Defaults.ProfileKeys.AddReg, MSFXAPO.AddReg
 AddProperty = HdAudBranding.AddProperty
-RegisterDlls=SfxFxW8.RegisterDlls, SRS.RegisterDlls
+RegisterDlls=SfxFxW8.RegisterDlls, SRS.RegisterDlls, Dolby.RegisterDlls, PCEE4.RegisterDlls
 
 [HdAud2075x3.15P660.NTamd64]
 Include=ks.inf,wdmaudio.inf
 Needs=KS.Registration,WDMAUDIO.Registration
 DelReg=HdAud.DelReg, DriverInfo.DelReg
-CopyFiles = HdAudModel.Copylist, Uninstall.Copylist, SfxFxW8.CopyList, SRSFx.CopyList
-AddReg    = HdAudModel.AddReg, HdAud2075x.AddReg, DriverInfo.AddReg, Couninstaller.AddReg, SRS.AddReg, PortA.AddReg
+CopyFiles = HdAudModel.Copylist, Uninstall.Copylist, SfxFxW8.CopyList, SRSFx.CopyList, Dolby.CopyFiles, PCEE4.CopyFiles
+AddReg    = HdAudModel.AddReg, HdAud2075x.AddReg, DriverInfo.AddReg, Couninstaller.AddReg, SRS.AddReg, PortA.AddReg, PCEE4_DHT_Keys.AddReg,PCEE4GlobalKeys.AddReg, PCEE4APO.AddReg, DS1APO.AddReg, DS1.Defaults.APOKeys.AddReg, DS1.DHT_Defaults.ProfileKeys.AddReg, MSFXAPO.AddReg
 AddProperty = HdAudBranding.AddProperty
-RegisterDlls=SfxFxW8.RegisterDlls, SRS.RegisterDlls
+RegisterDlls=SfxFxW8.RegisterDlls, SRS.RegisterDlls, Dolby.RegisterDlls, PCEE4.RegisterDlls
 
 [HdAud2075x4.14Z950.NTamd64]
 Include=ks.inf,wdmaudio.inf
 Needs=KS.Registration,WDMAUDIO.Registration
 DelReg=HdAud.DelReg, DriverInfo.DelReg
-CopyFiles = HdAudModel.Copylist, Uninstall.Copylist, SfxFxW8.CopyList, SRSFx.CopyList
-AddReg    = HdAudModel.AddReg, HdAud2075x.AddReg, DriverInfo.AddReg, Couninstaller.AddReg, SRS.AddReg, ASR.AddReg
+CopyFiles = HdAudModel.Copylist, Uninstall.Copylist, SfxFxW8.CopyList, SRSFx.CopyList, Dolby.CopyFiles, PCEE4.CopyFiles
+AddReg    = HdAudModel.AddReg, HdAud2075x.AddReg, DriverInfo.AddReg, Couninstaller.AddReg, SRS.AddReg, ASR.AddReg, PCEE4_DHT_Keys.AddReg,PCEE4GlobalKeys.AddReg, PCEE4APO.AddReg, DS1APO.AddReg, DS1.Defaults.APOKeys.AddReg, DS1.DHT_Defaults.ProfileKeys.AddReg, MSFXAPO.AddReg
 AddProperty = HdAudBranding.AddProperty
-RegisterDlls=SfxFxW8.RegisterDlls, SRS.RegisterDlls
+RegisterDlls=SfxFxW8.RegisterDlls, SRS.RegisterDlls, Dolby.RegisterDlls, PCEE4.RegisterDlls
 
 [HdAud2075x4.15Z960.NTamd64]
 Include=ks.inf,wdmaudio.inf
 Needs=KS.Registration,WDMAUDIO.Registration
 DelReg=HdAud.DelReg, DriverInfo.DelReg
-CopyFiles = HdAudModel.Copylist, Uninstall.Copylist, SfxFxW8.CopyList, SRSFx.CopyList
-AddReg    = HdAudModel.AddReg, HdAud2075x.AddReg, DriverInfo.AddReg, Couninstaller.AddReg, SRS.AddReg, ASR.AddReg, AECOn.AddReg
+CopyFiles = HdAudModel.Copylist, Uninstall.Copylist, SfxFxW8.CopyList, SRSFx.CopyList, Dolby.CopyFiles, PCEE4.CopyFiles
+AddReg    = HdAudModel.AddReg, HdAud2075x.AddReg, DriverInfo.AddReg, Couninstaller.AddReg, SRS.AddReg, ASR.AddReg, AECOn.AddReg, PCEE4_DHT_Keys.AddReg,PCEE4GlobalKeys.AddReg, PCEE4APO.AddReg, DS1APO.AddReg, DS1.Defaults.APOKeys.AddReg, DS1.DHT_Defaults.ProfileKeys.AddReg, MSFXAPO.AddReg
 AddProperty = HdAudBranding.AddProperty
-RegisterDlls=SfxFxW8.RegisterDlls, SRS.RegisterDlls
+RegisterDlls=SfxFxW8.RegisterDlls, SRS.RegisterDlls, Dolby.RegisterDlls, PCEE4.RegisterDlls
 
 [HdAud2075x.14Z950.NTamd64.Services]
 AddService=CnxtHdAudService, 0x00000002, HdAud_Service_Install
@@ -614,6 +634,45 @@ HKR,"FX\\0",%PKEY_MFX_ProcessingModes_Supported_For_Streaming%,0x00010000,%AUDIO
 HKR,"FX\\0",%PKEY_FX_StreamEffectClsid%,,%SYSFX_PREMIXW8_CLSID%
 HKR,"FX\\0",%PKEY_SFX_ProcessingModes_Supported_For_Streaming%,0x00010000,%AUDIO_SIGNALPROCESSINGMODE_DEFAULT%
 
+[HdAudModel.SSysFx.PCEE4.AddReg]
+HKR,"FX\\0",%PKEY_ItemNameDisplay%,,%SYSFX_FriendlyName%
+;HKR,"FX\\0",%PKEY_FX_PostMixClsid%,,%SYSFX_POSTMIX_CLSID%
+HKR,"FX\\0",%PKEY_FX_UiClsid%,,%PAGE_MASTER_UI_CLSID%
+HKR,"FX\\0",%PKEY_PAGE_MASTER_PAGE_0%,,%FX_UI_CLSID%
+;HKR,"FX\\0",%PKEY_PAGE_MASTER_PAGE_3%,,%PCEE4_UI_CLSID%
+;HKR,"FX\\0",%PKEY_PAGE_MASTER_PAGE_2%,,%3DHP_UI_CLSID%
+;HKR,"FX\\0",%PKEY_FX_PreMixClsid%,,%PCEE4_HT_PREMIX_CLSID%
+;HKR,"FX\\0",%PCEE4_FORMFACTOR_OVERRIDE%,%REG_DWORD%, 0x0001
+HKR,"FX\\0",%PKEY_Endpoint_ID%, %REG_DWORD%, 0x0010
+HKR,"FX\\0",%PKEY_Endpoint_Enable_LFX%, %REG_DWORD%, 0x0000
+HKR,"FX\\0",%PKEY_Endpoint_Enable_LFX_BEAMFORMING%, %REG_DWORD%, 0x0000
+HKR,"FX\\0",%PKEY_Endpoint_Enable_LFX_AEC%, %REG_DWORD%, 0x0000
+HKR,"FX\\0",%PKEY_Endpoint_Enable_GFX%, %REG_DWORD%, 0x0001
+HKR,"FX\\0",%PKEY_AudioEndpoint_Disable_SysFx%, %REG_DWORD%, 0x0000
+HKR,"FX\\0",%PKEY_FX_Association%,,%KSNODETYPE_SPEAKER%
+
+HKR,"FX\\0", "{01F0E753-3A7A-4b21-A904-D06826245E43},6000", %REG_DWORD%, 0x00000000 ; PKEY_3D_HP_Enable
+HKR,"FX\\0", "{01F0E753-3A7A-4b21-A904-D06826245E43},6001", %REG_DWORD%, 0x00000010 ; PKEY_3D_HP_Spread
+HKR,"FX\\0", "{01F0E753-3A7A-4b21-A904-D06826245E43},6002", %REG_DWORD%, 0x00000010 ; PKEY_3D_HP_RoomSize
+
+HKR,"FX\\0","{0C709614-E770-0001-4000-018664542698},1023", %REG_DWORD%, 0x0000 ; Enable SysPb EQ under VoIP.
+
+;; CNXT MFX keys
+HKR,"FX\\0",%PKEY_FX_ModeEffectClsid%,,%SYSFX_POSTMIX_CLSID%
+HKR,"FX\\0",%PKEY_MFX_ProcessingModes_Supported_For_Streaming%,0x00010000,%AUDIO_SIGNALPROCESSINGMODE_DEFAULT%
+
+;; Dolby DS1 SFX keys
+HKR,"FX\\0",%PKEY_FX_StreamEffectClsid%,,%SYSFX_ANALOG_STREAM_CLSID% ;; PKEY_FX_StreamEffectClsid need to be used here since Dolby's APO has to be installed as an SFX for Win 8.1
+HKR,"FX\\0",%PKEY_PAGE_MASTER_PAGE_2%,,%SYSFX_ANALOG_UI_CLSID%
+HKR,"FX\\0",%PKEY_SFX_ProcessingModes_Supported_For_Streaming%,0x00010000,%AUDIO_SIGNALPROCESSINGMODE_DEFAULT%
+
+;; Dolby PCEE4 SFX keys
+HKR,"FX\\0",%PKEY_FX_PreMixClsid%,,%PCEE4_HT_POSTMIX_CLSID% ;; PCEE4 Premix
+HKR,"FX\\0",%PKEY_FX_PostMixClsid%,,%PCEE4_HT_PREMIX_CLSID% ;; PCEE4 Postmix
+HKR,"FX\\0",%PKEY_PAGE_MASTER_PAGE_3%,,%PCEE4_UI_CLSID% ;; PCEE4 UI
+HKR,"FX\\0",%PKEY_SFX_ProcessingModes_Supported_For_Streaming%,0x00010000,%AUDIO_SIGNALPROCESSINGMODE_DEFAULT%
+
+
 [HdAudModel.ESSysFx.AddReg]
 HKR,"EP\\0",%PKEY_AudioEndpoint_Association%,,%KSNODETYPE_SPEAKER%
 HKR,"EP\\0",%PKEY_Endpoint_ID%, %REG_DWORD%, 0x0010
@@ -702,6 +761,42 @@ HKR,"FX\\0",%PKEY_MFX_ProcessingModes_Supported_For_Streaming%,0x00010000,%AUDIO
 HKR,"FX\\0",%PKEY_FX_StreamEffectClsid%,,%SYSFX_PREMIXW8_CLSID%
 HKR,"FX\\0",%PKEY_SFX_ProcessingModes_Supported_For_Streaming%,0x00010000,%AUDIO_SIGNALPROCESSINGMODE_DEFAULT%
 
+[HdAudModel.HSysFx.PCEE4.AddReg]
+HKR,"FX\\0",%PKEY_ItemNameDisplay%,,%SYSFX_FriendlyName%
+;HKR,"FX\\0",%PKEY_FX_PostMixClsid%,,%SYSFX_POSTMIX_CLSID%
+HKR,"FX\\0",%PKEY_FX_UiClsid%,,%PAGE_MASTER_UI_CLSID%
+HKR,"FX\\0",%PKEY_PAGE_MASTER_PAGE_0%,,%FX_UI_CLSID%
+;HKR,"FX\\0",%PKEY_PAGE_MASTER_PAGE_3%,,%PCEE4_UI_CLSID%
+;HKR,"FX\\0",%PKEY_PAGE_MASTER_PAGE_2%,,%3DHP_UI_CLSID%
+;HKR,"FX\\0",%PKEY_FX_PreMixClsid%,,%PCEE4_HT_PREMIX_CLSID%
+HKR,"FX\\0",%PKEY_Endpoint_ID%, %REG_DWORD%, 0x0050
+HKR,"FX\\0",%PKEY_Endpoint_Enable_LFX%, %REG_DWORD%, 0x0000
+HKR,"FX\\0",%PKEY_Endpoint_Enable_LFX_BEAMFORMING%, %REG_DWORD%, 0x0000
+HKR,"FX\\0",%PKEY_Endpoint_Enable_LFX_AEC%, %REG_DWORD%, 0x0000
+HKR,"FX\\0",%PKEY_Endpoint_Enable_GFX%, %REG_DWORD%, 0x0001
+HKR,"FX\\0",%PKEY_AudioEndpoint_Disable_SysFx%, %REG_DWORD%, 0x0000
+HKR,"FX\\0",%PKEY_FX_Association%,,%KSNODETYPE_HEADPHONES%
+
+HKR,"FX\\0", "{01F0E753-3A7A-4b21-A904-D06826245E43},6000", %REG_DWORD%, 0x00000000 ; PKEY_3D_HP_Enable
+HKR,"FX\\0", "{01F0E753-3A7A-4b21-A904-D06826245E43},6001", %REG_DWORD%, 0x00000010 ; PKEY_3D_HP_Spread
+HKR,"FX\\0", "{01F0E753-3A7A-4b21-A904-D06826245E43},6002", %REG_DWORD%, 0x00000010 ; PKEY_3D_HP_RoomSize
+
+;; CNXT MFX keys
+HKR,"FX\\0",%PKEY_FX_ModeEffectClsid%,,%SYSFX_POSTMIX_CLSID%
+HKR,"FX\\0",%PKEY_MFX_ProcessingModes_Supported_For_Streaming%,0x00010000,%AUDIO_SIGNALPROCESSINGMODE_DEFAULT%
+
+;; Dolby DS1 SFX keys
+HKR,"FX\\0",%PKEY_FX_StreamEffectClsid%,,%SYSFX_ANALOG_STREAM_CLSID% ;; PKEY_FX_StreamEffectClsid need to be used here since Dolby's APO has to be installed as an SFX for Win 8.1
+HKR,"FX\\0",%PKEY_PAGE_MASTER_PAGE_2%,,%SYSFX_ANALOG_UI_CLSID%
+HKR,"FX\\0",%PKEY_SFX_ProcessingModes_Supported_For_Streaming%,0x00010000,%AUDIO_SIGNALPROCESSINGMODE_DEFAULT%
+
+;; Dolby PCEE4 SFX keys
+HKR,"FX\\0",%PKEY_FX_PreMixClsid%,,%PCEE4_HT_POSTMIX_CLSID% ;; PCEE4 Premix
+HKR,"FX\\0",%PKEY_FX_PostMixClsid%,,%PCEE4_HT_PREMIX_CLSID% ;; PCEE4 Postmix
+HKR,"FX\\0",%PKEY_PAGE_MASTER_PAGE_3%,,%PCEE4_UI_CLSID% ;; PCEE4 UI
+HKR,"FX\\0",%PKEY_SFX_ProcessingModes_Supported_For_Streaming%,0x00010000,%AUDIO_SIGNALPROCESSINGMODE_DEFAULT%
+
+
 [HdAudModel.EHSysFx.AddReg]
 HKR,"EP\\0",%PKEY_AudioEndpoint_Association%,,%KSNODETYPE_HEADPHONES%
 HKR,"EP\\0",%PKEY_Endpoint_ID%, %REG_DWORD%, 0x0050
@@ -766,6 +861,33 @@ slconfig.xml
 11,SRSLabs,slprp64.dll,1
 11,SRSLabs,sltech64.dll,1
 11,SRSLabs,sluapo64.dll,1
+
+[Dolby.CopyFiles]
+DDPO64A.dll
+DDPD64A.dll
+DDPP64A.dll
+DDPA64.dll
+
+[PCEE4.CopyFiles]
+EEL64A.dll
+EED64A.dll
+EEG64A.dll
+EEA64A.dll
+EEP64A.dll
+
+[Dolby.RegisterDlls]
+11,,DDPO64A.dll,1
+11,,DDPD64A.dll,1
+11,,DDPP64A.dll,1
+11,,DDPA64.dll,1
+
+[PCEE4.RegisterDlls]
+11,,EEL64A.dll,1
+11,,EED64A.dll,1
+11,,EEG64A.dll,1
+11,,EEA64A.dll,1
+11,,EEP64A.dll,1
+
 
 [HdAud_Service_Install]
 DisplayName   = %UAAFunctionDriverForHdAudio.SvcDesc%
@@ -865,6 +987,154 @@ HKR,%RenPluginGFX%\%SRS3_SYSFX_MFX_CLSID%,"CheckApp",%REG_DWORD%,0x00000001
 
 [SRS.AddReg.Security]
 "D:(A;;GA;;;WD)"
+
+[DS1.Defaults.APOKeys.AddReg]
+; Stream effect APO COM registration
+HKCR,CLSID\%SYSFX_ANALOG_STREAM_CLSID%,,,%SYSFX_ANALOG_FriendlyName_SFX%
+HKCR,CLSID\%SYSFX_ANALOG_STREAM_CLSID%\InProcServer32,,,%11%\DDPO64A.dll
+HKCR,CLSID\%SYSFX_ANALOG_STREAM_CLSID%\InProcServer32,ThreadingModel,,"Both"
+
+; Effects UI page COM registration
+HKCR,CLSID\%SYSFX_ANALOG_UI_CLSID%,,,"Dolby Digital Plus Home Theater Property Page Class"
+HKCR,CLSID\%SYSFX_ANALOG_UI_CLSID%\InProcServer32,,,%11%\DDPP64A.dll
+HKCR,CLSID\%SYSFX_ANALOG_UI_CLSID%\InProcServer32,ThreadingModel,,"Apartment"
+
+[DS1.DAA_Defaults.ProfileKeys.AddReg]
+HKLM, "SOFTWARE\Dolby\DolbyDigitalPlus\StaticKeys", "{8A92D74F-1332-43f6-AB72-01C0E37F1CF0},0", %REG_DWORD%, 0x0000021f   ;; 0x0000021f is DS1 Advanced Audio Master Enable
+HKLM, "SOFTWARE\Dolby\DolbyDigitalPlus\StaticKeys", "{DD0DF94B-53A2-4a92-854E-91F42E28FD7B},68", %REG_DWORD%, 0x00000002  ; Limit DS1 SFX APO instances to 2
+HKLM, "SOFTWARE\Dolby\DolbyDigitalPlus\DynamicKeys", "{DD0DF94B-53A2-4a92-854E-91F42E28FD7B},0", %REG_DWORD%, 0x0001          ; FormFactor SPK
+
+;; Application version
+HKLM, "SOFTWARE\Dolby\DolbyDigitalPlus\StaticKeys", "{DD0DF94B-53A2-4a92-854E-91F42E28FD7B},503", %REG_DWORD%, "1"          ; Version_3
+HKLM, "SOFTWARE\Dolby\DolbyDigitalPlus\StaticKeys", "{DD0DF94B-53A2-4a92-854E-91F42E28FD7B},502", %REG_DWORD%, "4"          ; Version_2
+HKLM, "SOFTWARE\Dolby\DolbyDigitalPlus\StaticKeys", "{DD0DF94B-53A2-4a92-854E-91F42E28FD7B},501", %REG_DWORD%, "0"          ; Version_1
+HKLM, "SOFTWARE\Dolby\DolbyDigitalPlus\StaticKeys", "{DD0DF94B-53A2-4a92-854E-91F42E28FD7B},500", %REG_DWORD%, "1"          ; Version_0
+
+[DS1.DAA_Defaults.ProfileKeys.AddReg.Security]
+"D:(A;;GA;;;WD)"
+
+[DS1.DHT_Defaults.ProfileKeys.AddReg]
+HKLM, "SOFTWARE\Dolby\DolbyDigitalPlus\StaticKeys", "{8A92D74F-1332-43f6-AB72-01C0E37F1CF0},0", %REG_DWORD%, 0x000003ff   ;; 0x000003ff is DS1 Home Theater Master Enable
+HKLM, "SOFTWARE\Dolby\DolbyDigitalPlus\StaticKeys", "{DD0DF94B-53A2-4a92-854E-91F42E28FD7B},68", %REG_DWORD%, 0x00000002  ; Limit DS1 SFX APO instances to 2
+HKLM, "SOFTWARE\Dolby\DolbyDigitalPlus\DynamicKeys", "{DD0DF94B-53A2-4a92-854E-91F42E28FD7B},0", %REG_DWORD%, 0x0001          ; FormFactor SPK
+
+;; Application version
+HKLM, "SOFTWARE\Dolby\DolbyDigitalPlus\StaticKeys", "{DD0DF94B-53A2-4a92-854E-91F42E28FD7B},503", %REG_DWORD%, "1"          ; Version_3
+HKLM, "SOFTWARE\Dolby\DolbyDigitalPlus\StaticKeys", "{DD0DF94B-53A2-4a92-854E-91F42E28FD7B},502", %REG_DWORD%, "4"          ; Version_2
+HKLM, "SOFTWARE\Dolby\DolbyDigitalPlus\StaticKeys", "{DD0DF94B-53A2-4a92-854E-91F42E28FD7B},501", %REG_DWORD%, "0"          ; Version_1
+HKLM, "SOFTWARE\Dolby\DolbyDigitalPlus\StaticKeys", "{DD0DF94B-53A2-4a92-854E-91F42E28FD7B},500", %REG_DWORD%, "1"          ; Version_0
+
+[DS1.DHT_Defaults.ProfileKeys.AddReg.Security]
+"D:(A;;GA;;;WD)"
+
+[DS1.DelReg] ; Erase stale DS1 dynamic and static property keys when reinstalling. Don't delete SOFTWARE\Dolby\DolbyDigitalPlus\AppKeys
+HKLM, "SOFTWARE\Dolby\DolbyDigitalPlus\StaticKeys"
+HKLM, "SOFTWARE\Dolby\DolbyDigitalPlus\DynamicKeys"
+
+[PCEE4_DHT_Keys.AddReg]
+;; PCEE4 Master enables
+HKLM, "Software\Dolby\PCEE4\StaticKeys",  "{8A92D74F-1332-43f6-AB72-01C0E37F1CF0},0",   %REG_DWORD%, 0x000003FF; Premium SKU: Dolby Home Theater v4
+HKLM, "SOFTWARE\Dolby\PCEE4\DynamicKeys"
+HKLM, "SOFTWARE\Dolby\PCEE4\AppKeys"
+
+[PCEE4_DHT_Keys.AddReg.Security]
+"D:(A;;GA;;;WD)"
+
+[PCEE4_DAA_Keys.AddReg]
+;; PCEE4 Master enables
+HKLM, "Software\Dolby\PCEE4\StaticKeys",  "{8A92D74F-1332-43f6-AB72-01C0E37F1CF0},0",   %REG_DWORD%, 0x0000021f; Premium SKU: Dolby Advance Audio 2
+HKLM, "SOFTWARE\Dolby\PCEE4\DynamicKeys"
+HKLM, "SOFTWARE\Dolby\PCEE4\AppKeys"
+
+[PCEE4_DAA_Keys.AddReg.Security]
+"D:(A;;GA;;;WD)"
+
+[PCEE4GlobalKeys.AddReg]
+
+;;
+;; PCEE4 property keys
+;;
+;; From this point to the end of this section, the property keys shown here are all set to the default values, which will be read
+;; if no registry key is present in the INF.
+;;
+;; Therefore, if you remove all of the following keys from the INF file, you will get identical behavior because these keys are the same values as the registry defaults.
+;; Alternatively, you can use them as a starting point for creating a customized set of defaults
+;; Remember that all of these property keys are global, so they should all be kept in a single INF section that is applied to all KSNODETYPE endpoints.
+;; The same keys should not be set from within more than one section of an INF file
+
+;	Set Dolby Enable On
+HKLM, "Software\Dolby\PCEE4\DynamicKeys", "{DD0DF94B-53A2-4a92-854E-91F42E28FD7B},1",   %REG_DWORD%, 0x00000001; PCEE4_DOLBY_ENABLE_PID
+
+;; The following entries are commented out because they are the default values. uncomment and change them if you want something other than the default value
+;; HKLM, "Software\Dolby\PCEE4\DynamicKeys", "{DD0DF94B-53A2-4a92-854E-91F42E28FD7B},6",   %REG_DWORD%, 0x00000000; PCEE4_UPMIX_TO_LFE_DYNAMIC_ENABLE_PID
+;; HKLM, "Software\Dolby\PCEE4\StaticKeys",  "{DD0DF94B-53A2-4a92-854E-91F42E28FD7B},55",  %REG_DWORD%, 0x00000000; PCEE4_MONO_SPEAKER_FILL_PID
+;; HKLM, "Software\Dolby\PCEE4\StaticKeys",  "{DD0DF94B-53A2-4a92-854E-91F42E28FD7B},56",  %REG_DWORD%, 0x00000000; PCEE4_UPMIX_TO_LFE_ENABLE_PID
+
+;; Uncomment the profile (Movie, Music, Game) that you want to use as the default. Movie is the default if there is no value specified
+HKLM,  "Software\Dolby\PCEE4\DynamicKeys",   "{DD0DF94B-53A2-4a92-854E-91F42E28FD7B},2",   %REG_DWORD%, 0x00000000; Movie PCEE4_ACTIVE_PROFILE_PID (0 = Movie, 1 = Music, 2 = Game)
+
+[PCEE4GlobalKeys.DelReg]
+HKLM, "Software\Dolby\PCEE4\StaticKeys"
+HKLM, "Software\Dolby\PCEE4\DynamicKeys"
+
+[PCEE4APO.AddReg]
+HKR,%RenPluginGFX%\%PCEE4_HT_PREMIX_CLSID%,"Priority",%REG_DWORD%,0x00000010
+HKR,%RenPluginGFX%\%PCEE4_HT_PREMIX_CLSID%,"SupportAPOs",%REG_DWORD%,0x00000007
+HKR,%RenPluginGFX%\%PCEE4_HT_PREMIX_CLSID%,"SupportJacks",%REG_DWORD%,0xFFFFFFFF
+HKR,%RenPluginGFX%\%PCEE4_HT_PREMIX_CLSID%,"SupportFormats",%REG_DWORD%,0xFFFFFFFF
+HKR,%RenPluginGFX%\%PCEE4_HT_PREMIX_CLSID%,"Requirements",%REG_DWORD%,0x00000010
+HKR,%RenPluginGFX%\%PCEE4_HT_PREMIX_CLSID%,"Disable",%REG_DWORD%,0x00000000
+HKR,%RenPluginGFX%\%PCEE4_HT_PREMIX_CLSID%,"Group",%REG_DWORD%,0x00000000
+HKR,%RenPluginGFX%\%PCEE4_HT_PREMIX_CLSID%,"ORDER",%REG_DWORD%,0x00000400
+HKR,%RenPluginGFX%\%PCEE4_HT_PREMIX_CLSID%,"CheckApp",%REG_DWORD%,0x00000001
+HKR,%RenPluginLFX%\%PCEE4_HT_POSTMIX_CLSID%,"Priority",%REG_DWORD%,0x00000010
+HKR,%RenPluginLFX%\%PCEE4_HT_POSTMIX_CLSID%,"SupportAPOs",%REG_DWORD%,0x00000007
+HKR,%RenPluginLFX%\%PCEE4_HT_POSTMIX_CLSID%,"SupportJacks",%REG_DWORD%,0xFFFFFFFF
+HKR,%RenPluginLFX%\%PCEE4_HT_POSTMIX_CLSID%,"SupportFormats",%REG_DWORD%,0xFFFFFFFF
+HKR,%RenPluginLFX%\%PCEE4_HT_POSTMIX_CLSID%,"Requirements",%REG_DWORD%,0x00000010
+HKR,%RenPluginLFX%\%PCEE4_HT_POSTMIX_CLSID%,"Disable",%REG_DWORD%,0x00000000
+HKR,%RenPluginLFX%\%PCEE4_HT_POSTMIX_CLSID%,"Group",%REG_DWORD%,0x00000000
+HKR,%RenPluginLFX%\%PCEE4_HT_POSTMIX_CLSID%,"ORDER",%REG_DWORD%,0x00000400
+HKR,%RenPluginLFX%\%PCEE4_HT_POSTMIX_CLSID%,"CheckApp",%REG_DWORD%,0x00000001
+
+
+[DS1APO.AddReg]
+HKR,%RenPluginLFX%\%SYSFX_ANALOG_STREAM_CLSID%,"Priority",%REG_DWORD%,0x00000010
+HKR,%RenPluginLFX%\%SYSFX_ANALOG_STREAM_CLSID%,"SupportAPOs",%REG_DWORD%,0x00000007
+HKR,%RenPluginLFX%\%SYSFX_ANALOG_STREAM_CLSID%,"SupportJacks",%REG_DWORD%,0xFFFFFFFF
+HKR,%RenPluginLFX%\%SYSFX_ANALOG_STREAM_CLSID%,"SupportFormats",%REG_DWORD%,0xFFFFFFFF
+HKR,%RenPluginLFX%\%SYSFX_ANALOG_STREAM_CLSID%,"Requirements",%REG_DWORD%,0x00000010
+HKR,%RenPluginLFX%\%SYSFX_ANALOG_STREAM_CLSID%,"Disable",%REG_DWORD%,0x00000000
+HKR,%RenPluginLFX%\%SYSFX_ANALOG_STREAM_CLSID%,"Group",%REG_DWORD%,0x00000000
+HKR,%RenPluginLFX%\%SYSFX_ANALOG_STREAM_CLSID%,"ORDER",%REG_DWORD%,0x00000400
+HKR,%RenPluginLFX%\%SYSFX_ANALOG_STREAM_CLSID%,"CheckApp",%REG_DWORD%,0x00000001
+
+[DS1CoInst.AddReg]
+HKLM, SOFTWARE\%DriverMfgr%\%ProductName%\RenameRestoreFiles,%11%\DDPA64.dll,,0x00000022
+HKLM, SOFTWARE\%DriverMfgr%\%ProductName%\RenameRestoreFiles,%11%\DDPD64A.dll,,0x00000022
+HKLM, SOFTWARE\%DriverMfgr%\%ProductName%\RenameRestoreFiles,%11%\DDPO64A.dll,,0x00000022
+HKLM, SOFTWARE\%DriverMfgr%\%ProductName%\RenameRestoreFiles,%11%\DDPP64A.dll,,0x00000022
+
+[MSFXAPO.AddReg]
+HKR,%RenPluginGFX%\%FX_PREMIX_CLSID%,"Priority",%REG_DWORD%,0x00000010
+HKR,%RenPluginGFX%\%FX_PREMIX_CLSID%,"SupportAPOs",%REG_DWORD%,0x00000007
+HKR,%RenPluginGFX%\%FX_PREMIX_CLSID%,"SupportJacks",%REG_DWORD%,0xFFFFFFFF
+HKR,%RenPluginGFX%\%FX_PREMIX_CLSID%,"SupportFormats",%REG_DWORD%,0xFFFFFFFF
+HKR,%RenPluginGFX%\%FX_PREMIX_CLSID%,"Requirements",%REG_DWORD%,0x00000010
+HKR,%RenPluginGFX%\%FX_PREMIX_CLSID%,"Disable",%REG_DWORD%,0x00000000
+HKR,%RenPluginGFX%\%FX_PREMIX_CLSID%,"Group",%REG_DWORD%,0x00000000
+HKR,%RenPluginGFX%\%FX_PREMIX_CLSID%,"ORDER",%REG_DWORD%,0x00000400
+HKR,%RenPluginGFX%\%FX_PREMIX_CLSID%,"CheckApp",%REG_DWORD%,0x00000001
+HKR,%RenPluginLFX%\%FX_POSTMIX_CLSID%,"Priority",%REG_DWORD%,0x00000010
+HKR,%RenPluginLFX%\%FX_POSTMIX_CLSID%,"SupportAPOs",%REG_DWORD%,0x00000007
+HKR,%RenPluginLFX%\%FX_POSTMIX_CLSID%,"SupportJacks",%REG_DWORD%,0xFFFFFFFF
+HKR,%RenPluginLFX%\%FX_POSTMIX_CLSID%,"SupportFormats",%REG_DWORD%,0xFFFFFFFF
+HKR,%RenPluginLFX%\%FX_POSTMIX_CLSID%,"Requirements",%REG_DWORD%,0x00000010
+HKR,%RenPluginLFX%\%FX_POSTMIX_CLSID%,"Disable",%REG_DWORD%,0x00000000
+HKR,%RenPluginLFX%\%FX_POSTMIX_CLSID%,"Group",%REG_DWORD%,0x00000000
+HKR,%RenPluginLFX%\%FX_POSTMIX_CLSID%,"ORDER",%REG_DWORD%,0x00000400
+HKR,%RenPluginLFX%\%FX_POSTMIX_CLSID%,"CheckApp",%REG_DWORD%,0x00000001
+
 
 [LvlRelAdjust.AddReg]
 HKLM, SYSTEM\CurrentControlSet\Control\Conexant\LvlRelAdjust,BalanceChannel,0x10001,0x00000001 ;
@@ -2620,12 +2890,12 @@ AddReg = EPProperties.Addreg
 
 [HdAudModel.RearLineOutTopoW8]
 DelReg = APO.DelReg
-AddReg = HdAudModel.RearLineOutTopo.AddReg, HdAudModel.SSysFxW8.AddReg, HdAudModel.ESSysFx.AddReg
+AddReg = HdAudModel.RearLineOutTopo.AddReg, HdAudModel.SSysFxW8.AddReg, HdAudModel.SSysFx.PCEE4.AddReg, HdAudModel.ESSysFx.AddReg
 AddReg = EPProperties.Addreg
 
 [HdAudModel.RearLineOutTopoW8_CNXT]
 DelReg = APO.DelReg
-AddReg = HdAudModel.RearLineOutTopo.AddReg, HdAudModel.SSysFxW8.CNXT.AddReg, HdAudModel.ESSysFx.AddReg
+AddReg = HdAudModel.RearLineOutTopo.AddReg, HdAudModel.SSysFxW8.CNXT.AddReg, HdAudModel.SSysFx.PCEE4.AddReg, HdAudModel.ESSysFx.AddReg
 AddReg = EPProperties.Addreg
 
 ; Front panel headphone
@@ -2667,12 +2937,12 @@ AddReg = EPProperties.Addreg
 
 [HdAudModel.HeadphoneTopoW8]
 DelReg = APO.DelReg
-AddReg = HdAudModel.HeadphoneTopo.AddReg, HdAudModel.HSysFxW8.AddReg, HdAudModel.EHSysFx.AddReg
+AddReg = HdAudModel.HeadphoneTopo.AddReg, HdAudModel.HSysFxW8.AddReg, HdAudModel.HSysFx.PCEE4.AddReg, HdAudModel.EHSysFx.AddReg
 AddReg = EPProperties.Addreg
 
 [HdAudModel.HeadphoneTopoW8_CNXT]
 DelReg = APO.DelReg
-AddReg = HdAudModel.HeadphoneTopo.AddReg, HdAudModel.HSysFxW8.CNXT.AddReg, HdAudModel.EHSysFx.AddReg
+AddReg = HdAudModel.HeadphoneTopo.AddReg, HdAudModel.HSysFxW8.CNXT.AddReg, HdAudModel.HSysFx.PCEE4.AddReg, HdAudModel.EHSysFx.AddReg
 AddReg = EPProperties.Addreg
 
 [HdAudModel.HeadphoneTopo.AddReg]
@@ -3005,8 +3275,8 @@ SmartampOnVerbsPath="System\CurrentControlSet\Control\Conexant\SmartAmpOnVerbs"
 SmartampOffVerbsPath="System\CurrentControlSet\Control\Conexant\SmartAmpOffVerbs"
 
 MediaCategories="SYSTEM\CurrentControlSet\Control\MediaCategories"
-CNXT="Conexant"
-Conexant.Mfg="Conexant"
+CNXT="Modded by kgtmaven"
+Conexant.Mfg="Modded by kgtmaven"
 
 ; localizable
 DiskId1 = "Installation Disk"
@@ -3236,6 +3506,13 @@ PAGE_MASTER_UI_CLSID	= "{AA747400-B9F8-4D7F-B41C-F8CF3047A0DB}"   ; Page Master 
 PKEY_PAGE_MASTER_PAGE_0 = "{AA747400-B9F8-4D7F-B41C-F8CF3047A0DB},0" ; First Page
 PKEY_PAGE_MASTER_PAGE_1 = "{AA747400-B9F8-4D7F-B41C-F8CF3047A0DB},1" ; Second Page
 PKEY_PAGE_MASTER_PAGE_2 = "{AA747400-B9F8-4D7F-B41C-F8CF3047A0DB},2" ; 3rd Page
+PKEY_PAGE_MASTER_PAGE_3 = "{AA747400-B9F8-4D7F-B41C-F8CF3047A0DB},3" ; 4th Page
+PKEY_PAGE_MASTER_PAGE_4 = "{AA747400-B9F8-4D7F-B41C-F8CF3047A0DB},4" ; 5th Page
+PKEY_PAGE_MASTER_PAGE_5 = "{AA747400-B9F8-4D7F-B41C-F8CF3047A0DB},5" ; 6th Page
+PKEY_PAGE_MASTER_PAGE_6 = "{AA747400-B9F8-4D7F-B41C-F8CF3047A0DB},6" ; 7th Page
+PKEY_PAGE_MASTER_PAGE_7 = "{AA747400-B9F8-4D7F-B41C-F8CF3047A0DB},7" ; 8th Page
+PKEY_PAGE_MASTER_PAGE_8 = "{AA747400-B9F8-4D7F-B41C-F8CF3047A0DB},8" ; 9th Page
+PKEY_PAGE_MASTER_PAGE_9 = "{AA747400-B9F8-4D7F-B41C-F8CF3047A0DB},9" ; 10th Page
 
 ; Plugins settings
 RenPluginLFX = "Settings\Plugins\Render\LFX"
@@ -3266,8 +3543,26 @@ FX_FriendlyName  = "Microsoft Audio Home Theater Effects"
 
 DesDigiMicBoost_CLSID = "{4d8b5a4e-4f8b-4be5-b109-4b7214611257},2"
 
+
+; Dolby PCEE4 Defines
+PCEE4_HT_PREMIX_CLSID           = "{BC8E3B67-3306-4eef-B230-6798E9A67F0B}" ; analog driver Dolby Home Theater v4
+PCEE4_HT_POSTMIX_CLSID          = "{56E00778-C664-4bb5-AA2B-CA6F14840BB3}" ; analog driver premium
+PCEE4_UI_CLSID                  = "{C53E5AAF-5F6F-41c2-9F63-ADEBBC9B6B64}" ; analog driver mainstream
+PCEE4_FORMFACTOR_OVERRIDE       = "{DD0DF94B-53A2-4a92-854E-91F42E28FD7B},0"; analog driver form factor override
+
+; Conexant Speaker Properties Page Extensions for Dolby to replace the MS Enhancement page
+CNXT_UI_CLSID = "{5E344C16-0672-4a5c-88E7-25D7F3026C87}"
+
+; Dolby DS1 Defines
+SYSFX_ANALOG_STREAM_CLSID     = "{AE0B08BE-FF0E-4FF6-BEC5-24BFD96B4050}" ; Analog APO as SFX
+SYSFX_ANALOG_PREMIX_CLSID     = "{AE0B08BE-FF0E-4FF6-BEC5-24BFD96B4050}" ; Analog APO as LFX
+SYSFX_ANALOG_POSTMIX_CLSID    = "{AE0B08BE-FF0E-4FF6-BEC5-24BFD96B4050}" ; Analog APO as GFX
+SYSFX_ANALOG_UI_CLSID         = "{DDE20A40-F390-4616-AE98-2BA9E8C70744}" ; Analog Prop Page
+SYSFX_ANALOG_FriendlyName_LFX = "Dolby Digital Plus Advanced Audio LFX"
+SYSFX_ANALOG_FriendlyName_SFX = "Dolby Digital Plus Advanced Audio SFX "
+
 ; History Information
-DriverMfgr="Conexant"
+DriverMfgr="Modded by kgtmaven"
 ProductName = "Conexant High Definition SmartAudio"
 DriverVersionID="8.66.23"
 DriverBuildDate="11/30/2015"
