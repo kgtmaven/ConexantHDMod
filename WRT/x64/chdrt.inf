@@ -683,7 +683,7 @@ HKR,"FX\\0",%PKEY_FX_Association%,,%KSNODETYPE_SPEAKER%
 HKR,"FX\\0","{0C709614-E770-0001-4000-018664542698},1025", %REG_DWORD%, 0x0000 ; Enable D3 mute audio
 
 ;; Dolby DAX2 MFX keys and other keys
-HKR,"FX\\0",%PKEY_FX_ModeEffectClsid%,,%SYSFX_POSTMIX_CLSID%
+;HKR,"FX\\0",%PKEY_FX_ModeEffectClsid%,,%SYSFX_POSTMIX_CLSID%
 HKR,"FX\\0",%PKEY_PAGE_MASTER_PAGE_1%,,%FX_DAX2_UI_CLSID%
 HKR,"FX\\0",%PKEY_Enable_DolbyDAX2%, %REG_DWORD%, 0x00000001
 HKR,"FX\\0",%PKEY_MFX_ProcessingModes_Supported_For_Streaming%,0x00010000,%AUDIO_SIGNALPROCESSINGMODE_DEFAULT%
@@ -867,17 +867,17 @@ HKR,"FX\\0", "{01F0E753-3A7A-4b21-A904-D06826245E43},6002", %REG_DWORD%, 0x00000
 HKR,"FX\\0","{0C709614-E770-0001-4000-018664542698},1023", %REG_DWORD%, 0x0000 ; Enable SysPb EQ under VoIP.
 
 ;; CNXT MFX keys
-HKR,"FX\\0",%PKEY_FX_ModeEffectClsid%,,%SYSFX_POSTMIX_CLSID%
+;HKR,"FX\\0",%PKEY_FX_ModeEffectClsid%,,%SYSFX_POSTMIX_CLSID%
 HKR,"FX\\0",%PKEY_MFX_ProcessingModes_Supported_For_Streaming%,0x00010000,%AUDIO_SIGNALPROCESSINGMODE_DEFAULT%
 
 ;; Dolby DS1 SFX keys
-HKR,"FX\\0",%PKEY_FX_StreamEffectClsid%,,%SYSFX_ANALOG_STREAM_CLSID% ;; PKEY_FX_StreamEffectClsid need to be used here since Dolby's APO has to be installed as an SFX for Win 8.1
+;HKR,"FX\\0",%PKEY_FX_StreamEffectClsid%,,%SYSFX_ANALOG_STREAM_CLSID% ;; PKEY_FX_StreamEffectClsid need to be used here since Dolby's APO has to be installed as an SFX for Win 8.1
 HKR,"FX\\0",%PKEY_PAGE_MASTER_PAGE_2%,,%SYSFX_ANALOG_UI_CLSID%
 HKR,"FX\\0",%PKEY_SFX_ProcessingModes_Supported_For_Streaming%,0x00010000,%AUDIO_SIGNALPROCESSINGMODE_DEFAULT%
 
 ;; Dolby PCEE4 SFX keys
-HKR,"FX\\0",%PKEY_FX_PreMixClsid%,,%PCEE4_HT_POSTMIX_CLSID% ;; PCEE4 Premix
-HKR,"FX\\0",%PKEY_FX_PostMixClsid%,,%PCEE4_HT_PREMIX_CLSID% ;; PCEE4 Postmix
+;HKR,"FX\\0",%PKEY_FX_PreMixClsid%,,%PCEE4_HT_POSTMIX_CLSID% ;; PCEE4 Premix
+;HKR,"FX\\0",%PKEY_FX_PostMixClsid%,,%PCEE4_HT_PREMIX_CLSID% ;; PCEE4 Postmix
 HKR,"FX\\0",%PKEY_PAGE_MASTER_PAGE_3%,,%PCEE4_UI_CLSID% ;; PCEE4 UI
 HKR,"FX\\0",%PKEY_SFX_ProcessingModes_Supported_For_Streaming%,0x00010000,%AUDIO_SIGNALPROCESSINGMODE_DEFAULT%
 
@@ -986,7 +986,7 @@ HKR,"FX\\0",%PKEY_AudioEndpoint_Disable_SysFx%, %REG_DWORD%, 0x0000
 HKR,"FX\\0",%PKEY_FX_Association%,,%KSNODETYPE_HEADPHONES%
 
 ;; Dolby DAX2 MFX keys and other keys
-HKR,"FX\\0",%PKEY_FX_ModeEffectClsid%,,%SYSFX_POSTMIX_CLSID%
+;HKR,"FX\\0",%PKEY_FX_ModeEffectClsid%,,%SYSFX_POSTMIX_CLSID%
 HKR,"FX\\0",%PKEY_PAGE_MASTER_PAGE_1%,,%FX_DAX2_UI_CLSID%
 HKR,"FX\\0",%PKEY_Enable_DolbyDAX2%, %REG_DWORD%, 0x00000001
 HKR,"FX\\0",%PKEY_MFX_ProcessingModes_Supported_For_Streaming%,0x00010000,%AUDIO_SIGNALPROCESSINGMODE_DEFAULT%
@@ -1012,17 +1012,17 @@ HKR,"FX\\0", "{01F0E753-3A7A-4b21-A904-D06826245E43},6001", %REG_DWORD%, 0x00000
 HKR,"FX\\0", "{01F0E753-3A7A-4b21-A904-D06826245E43},6002", %REG_DWORD%, 0x00000010 ; PKEY_3D_HP_RoomSize
 
 ;; CNXT MFX keys
-HKR,"FX\\0",%PKEY_FX_ModeEffectClsid%,,%SYSFX_POSTMIX_CLSID%
+;HKR,"FX\\0",%PKEY_FX_ModeEffectClsid%,,%SYSFX_POSTMIX_CLSID%
 HKR,"FX\\0",%PKEY_MFX_ProcessingModes_Supported_For_Streaming%,0x00010000,%AUDIO_SIGNALPROCESSINGMODE_DEFAULT%
 
 ;; Dolby DS1 SFX keys
-HKR,"FX\\0",%PKEY_FX_StreamEffectClsid%,,%SYSFX_ANALOG_STREAM_CLSID% ;; PKEY_FX_StreamEffectClsid need to be used here since Dolby's APO has to be installed as an SFX for Win 8.1
+;HKR,"FX\\0",%PKEY_FX_StreamEffectClsid%,,%SYSFX_ANALOG_STREAM_CLSID% ;; PKEY_FX_StreamEffectClsid need to be used here since Dolby's APO has to be installed as an SFX for Win 8.1
 HKR,"FX\\0",%PKEY_PAGE_MASTER_PAGE_2%,,%SYSFX_ANALOG_UI_CLSID%
 HKR,"FX\\0",%PKEY_SFX_ProcessingModes_Supported_For_Streaming%,0x00010000,%AUDIO_SIGNALPROCESSINGMODE_DEFAULT%
 
 ;; Dolby PCEE4 SFX keys
-HKR,"FX\\0",%PKEY_FX_PreMixClsid%,,%PCEE4_HT_POSTMIX_CLSID% ;; PCEE4 Premix
-HKR,"FX\\0",%PKEY_FX_PostMixClsid%,,%PCEE4_HT_PREMIX_CLSID% ;; PCEE4 Postmix
+;HKR,"FX\\0",%PKEY_FX_PreMixClsid%,,%PCEE4_HT_POSTMIX_CLSID% ;; PCEE4 Premix
+;HKR,"FX\\0",%PKEY_FX_PostMixClsid%,,%PCEE4_HT_PREMIX_CLSID% ;; PCEE4 Postmix
 HKR,"FX\\0",%PKEY_PAGE_MASTER_PAGE_3%,,%PCEE4_UI_CLSID% ;; PCEE4 UI
 HKR,"FX\\0",%PKEY_SFX_ProcessingModes_Supported_For_Streaming%,0x00010000,%AUDIO_SIGNALPROCESSINGMODE_DEFAULT%
 
@@ -1219,6 +1219,54 @@ HKR,%RenPluginGFX%\%SRS3_SYSFX_MFX_CLSID%,"ORDER",%REG_DWORD%,0x00002000
 HKR,%RenPluginGFX%\%SRS3_SYSFX_MFX_CLSID%,"CheckApp",%REG_DWORD%,0x00000001
 
 [SRS.AddReg.Security]
+"D:(A;;GA;;;WD)"
+
+[DAX2APO.AddReg]
+; APO COM registration
+HKCR,CLSID\%FX_DAX2_APO_CLSID%,,,%FX_DAX2_FriendlyName%
+HKCR,CLSID\%FX_DAX2_APO_CLSID%\InProcServer32,,,%11%\DolbyDAX2APOv211.dll
+HKCR,CLSID\%FX_DAX2_APO_CLSID%\InProcServer32,ThreadingModel,,"Both"
+
+; Effects UI page COM registration
+HKCR,CLSID\%FX_DAX2_UI_CLSID%,,,"CplPage Class"
+HKCR,CLSID\%FX_DAX2_UI_CLSID%\InProcServer32,,,%11%\DolbyDAX2APOProp.dll
+HKCR,CLSID\%FX_DAX2_UI_CLSID%\InProcServer32,ThreadingModel,,"Apartment"
+
+; HiFi API COM registration
+HKCR,CLSID\%FX_DAX2_HIFI_API_CLSID%,,,"HiFiDAX2API Class"
+HKCR,CLSID\%FX_DAX2_HIFI_API_CLSID%\InProcServer32,,,%11%\HiFiDAX2API.dll
+HKCR,CLSID\%FX_DAX2_HIFI_API_CLSID%\InProcServer32,ThreadingModel,,"Both"
+
+; APO registration
+HKCR,AudioEngine\AudioProcessingObjects\%FX_DAX2_APO_CLSID%, "FriendlyName", ,%FX_DAX2_FriendlyName%
+HKCR,AudioEngine\AudioProcessingObjects\%FX_DAX2_APO_CLSID%, "Copyright", ,%DolbyCopyRight%
+HKCR,AudioEngine\AudioProcessingObjects\%FX_DAX2_APO_CLSID%, "MajorVersion", 0x00010001, 1
+HKCR,AudioEngine\AudioProcessingObjects\%FX_DAX2_APO_CLSID%, "MinorVersion", 0x00010001, 1
+HKCR,AudioEngine\AudioProcessingObjects\%FX_DAX2_APO_CLSID%, "Flags", 0x00010001, 0x0000000c
+HKCR,AudioEngine\AudioProcessingObjects\%FX_DAX2_APO_CLSID%, "MinInputConnections", 0x00010001, 1
+HKCR,AudioEngine\AudioProcessingObjects\%FX_DAX2_APO_CLSID%, "MaxInputConnections", 0x00010001, 1
+HKCR,AudioEngine\AudioProcessingObjects\%FX_DAX2_APO_CLSID%, "MinOutputConnections", 0x00010001, 1
+HKCR,AudioEngine\AudioProcessingObjects\%FX_DAX2_APO_CLSID%, "MaxOutputConnections", 0x00010001, 1
+HKCR,AudioEngine\AudioProcessingObjects\%FX_DAX2_APO_CLSID%, "MaxInstances", 0x00010001, 0xffffffff
+HKCR,AudioEngine\AudioProcessingObjects\%FX_DAX2_APO_CLSID%, "NumAPOInterfaces", 0x00010001, 1
+HKCR,AudioEngine\AudioProcessingObjects\%FX_DAX2_APO_CLSID%, "APOInterface0", ,"{ACA32C80-30EC-4D96-9022-CC6A4F70EAE2}"
+
+HKLM, SOFTWARE\%DriverMfgr%\%ProductName%\RenameRestoreFiles,%11%\DolbyDAX2APOv211.dll,,0x00000022
+HKLM, SOFTWARE\%DriverMfgr%\%ProductName%\RenameRestoreFiles,%11%\DolbyDAX2APOProp.dll,,0x00000022
+HKLM, SOFTWARE\%DriverMfgr%\%ProductName%\RenameRestoreFiles,%11%\HiFiDAX2API.dll,,0x00000022
+
+HKR,%RenPluginGFX%\%FX_DAX2_APO_CLSID%,"Priority",%REG_DWORD%,0x00000010
+HKR,%RenPluginGFX%\%FX_DAX2_APO_CLSID%,"SupportAPOs",%REG_DWORD%,0x00000007
+HKR,%RenPluginGFX%\%FX_DAX2_APO_CLSID%,"SupportJacks",%REG_DWORD%,0xFFFFFFFF
+HKR,%RenPluginGFX%\%FX_DAX2_APO_CLSID%,"SupportFormats",%REG_DWORD%,0xFFFFFFFF
+HKR,%RenPluginGFX%\%FX_DAX2_APO_CLSID%,"Requirements",%REG_DWORD%,0x00000010
+HKR,%RenPluginGFX%\%FX_DAX2_APO_CLSID%,"Disable",%REG_DWORD%,0x00000000
+HKR,%RenPluginGFX%\%FX_DAX2_APO_CLSID%,"Group",%REG_DWORD%,0x00000000
+HKR,%RenPluginGFX%\%FX_DAX2_APO_CLSID%,"ORDER",%REG_DWORD%,0x00000400
+HKR,%RenPluginGFX%\%FX_DAX2_APO_CLSID%,"RequireSRC",%REG_DWORD%,0x0001BB80 ;;Enable SRC function 
+HKR,%RenPluginGFX%\%FX_DAX2_APO_CLSID%,"CheckApp",%REG_DWORD%,0x00000001
+
+[DAX2APO.AddReg.Security]
 "D:(A;;GA;;;WD)"
 
 [DS1.Defaults.APOKeys.AddReg]
@@ -3813,7 +3861,7 @@ PKEY_DolbyDAX2_FormFactor		= "{DD0DF94B-53A2-4A92-854E-91F42E28FD7B},0"
 FX_DAX2_FriendlyName                   = "Dolby Audio X2"
 
 ; History Information
-DriverMfgr="Modded by kgtmaven"
+DriverMfgr="Conexant"
 ProductName = "Conexant High Definition SmartAudio"
 DriverVersionID="8.66.23"
 DriverBuildDate="11/30/2015"
